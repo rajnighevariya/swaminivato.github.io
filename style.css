@@ -1,0 +1,90 @@
+.title{
+    font-family: sans-serif;
+    color: #dc2d5e;
+}
+.title img{
+    width: 500px;
+
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: 0
+    /*background-color: transparent;*/
+}
+
+.image {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.swami_text{
+    background-image: url(img/swami.png);
+    width: 100px;
+    height: 100px;
+    
+}
+.swami_text h1{
+    position: absolute;
+    font-size: 20px;
+    top: -9px;
+    left: 221px;
+    color: black;
+    font-weight: bold;
+    
+}
+.imag_i{
+    width: 200px;
+    height: 200px;
+}
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    /*background-color: #008cba;*/
+}
+.overlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    /*background-color: #ff946bbd;*/
+}
+.container:hover .swami_text{
+    opacity: .2;
+}
+.container:hover .overlay,.container:hover .overlayFade {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overlayTop{
+    width: 100%;
+    height: 0;
+    top:0;
+    left:0;
+    /*background-color: #d63c58;*/
+}
+.overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom:0;
+    left:0;
+    /*background-color: #941e33;*/
+}
+.container:hover .overlayTop ,.container:hover .overlayBottom {
+    height: 100%;
+}
+
